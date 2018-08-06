@@ -1,5 +1,3 @@
-library(ISLR)
-
 # Test Data
 data <- data.frame(
   "X"=c(0, 0.25, 0.5, 1), 
