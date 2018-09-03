@@ -140,7 +140,7 @@ conversionsByAgeMarital$AgeGroup[is.na(conversionsByAgeMarital$AgeGroup)] <- "70
 
 # bar chart
 ggplot(conversionsByAgeMarital, aes(x=AgeGroup, y=ConversionRate, fill=Marital)) + 
-  geom_bar(width=0.5, stat="identity", position=position_dodge(width=0.5)) +
+  geom_bar(width=0.5, stat="identity", position="dodge") +
   ylab("Conversion Rate (%)") +
   xlab("Age") +
   ggtitle("Conversion Rates by Age and Marital Status") +
@@ -148,7 +148,7 @@ ggplot(conversionsByAgeMarital, aes(x=AgeGroup, y=ConversionRate, fill=Marital))
 
 # stacked bar chart
 ggplot(conversionsByAgeMarital, aes(x=AgeGroup, y=ConversionRate, fill=Marital)) + 
-  geom_bar(width=0.5, stat="identity") +
+  geom_bar(width=0.5, stat="identity", position="stack") +
   ylab("Conversion Rate (%)") +
   xlab("Age") +
   ggtitle("Conversion Rates by Age and Marital Status") +
