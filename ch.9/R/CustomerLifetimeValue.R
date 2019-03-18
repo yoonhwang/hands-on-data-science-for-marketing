@@ -1,5 +1,6 @@
 library(dplyr)
 library(readxl)
+library(ggplot2)
 
 #### 1. Load Data ####
 df <- read_excel(
